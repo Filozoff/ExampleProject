@@ -1,0 +1,9 @@
+language: objective-c
+os: osx
+osx_image: xcode10.1
+branches:
+    only:
+        - develop
+xcode_project: ExampleProject.xcodeproj
+xcode_scheme: ExampleProject
+xcode_destination: xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
