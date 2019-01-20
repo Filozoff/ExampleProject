@@ -35,7 +35,8 @@ class HomeView: UIView {
     
     override func updateConstraints() {
         NSLayoutConstraint.activate([
-            titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
+            titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
             titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
         
