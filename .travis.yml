@@ -1,5 +1,5 @@
 language: objective-c
 osx_image: xcode10.1
-xcode_project: ExampleProject.xcodeproj
-xcode_scheme: ExampleProject
-xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
+script:
+    pod update
+    set -o pipefail && xcodebuild -workspace ExampleProject.xcworkspace -scheme ExampleProject -destination 'platform=iOS Simulator,OS=12.1,name=iPhone X' build test | xcpretty
